@@ -340,7 +340,7 @@ static NSMutableArray *_collectImages;
         
         SHEmotionAttachment *attach = attrs[@"NSAttachment"];
         
-        if (attach.emotion.code) { // 如果是带有附件的富文本
+        if ([attach isKindOfClass:[SHEmotionAttachment class]] && attach.emotion.code) { // 如果是带有附件的富文本
 
             [string appendString:attach.emotion.code];
         } else { // 普通的文本
