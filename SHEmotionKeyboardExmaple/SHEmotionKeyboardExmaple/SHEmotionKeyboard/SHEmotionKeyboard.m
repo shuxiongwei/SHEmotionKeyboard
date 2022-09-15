@@ -11,6 +11,7 @@
 #import "SHEmotionTool.h"
 
 #define kSHEmotionRGB(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+
 //删除表情标示
 #define kSHEmotion_delete_code @"emotion_delete"
 
